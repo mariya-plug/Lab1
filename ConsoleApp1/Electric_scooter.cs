@@ -10,11 +10,10 @@ namespace MainProj
         public Electric_scooter(string vendor, int engine_power, float load_capacity, float price) 
             : base(vendor, price)
         {
-            // свойства для валидации
             Engine_power = engine_power;
             Load_capacity = load_capacity;
         }
-
+        // Методы для валидации
         public int Engine_power
         {
             get { return engine_power; }

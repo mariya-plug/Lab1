@@ -94,40 +94,8 @@ namespace MainProj
                     continue;
                 }
 
-                try
-                {
-                    switch (answer)
-                    {
-                        case 1:
-                            AppendElement(list);
-                            Console.WriteLine("Объект успешно добавлен!");
-                            break;
-                        case 2:
-                            if (list.Count == 0)
-                            {
-                                Console.WriteLine("Список пуст");
-                            }
-                            else
-                            {
-                                foreach (var item in list)
-                                {
-                                    item.PrintInfo();
-                                    Console.WriteLine();
-                                }
-                            }
-                            break;
-                        case 3:
-                            running = false;
-                            break;
-                        default:
-                            Console.WriteLine("Неверный выбор");
-                            break;
-                    }
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine($"Ошибка: {e.Message}");
-                }
+                
+
             }
         }
     }

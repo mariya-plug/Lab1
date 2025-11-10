@@ -41,12 +41,6 @@ namespace MainProj
             }
         }
 
-        public override void PrintInfo()
-        {
-            Console.WriteLine("Параметры легкового автомобиля:");
-            base.PrintInfo();
-            Console.WriteLine($"Максимальная скорость (в км/ч): {Max_speed}");
-            Console.WriteLine($"Пассажировместимость (в кол. человек): {Passenger_capacity}");
-        }
+       
     }
 }
